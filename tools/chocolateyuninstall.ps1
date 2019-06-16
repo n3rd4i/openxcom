@@ -1,12 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
-$installLocation = "$ENV:LocalAppData\Programs\openxcom"
-$shortcutPath = "$ENV:UserProfile\Desktop\OpenXCOM.lnk"
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. "$toolsDir\commonEnv.ps1"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'xcom*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 }
-
 $uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 if ($key.Count -eq 1) {
@@ -27,6 +26,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
-
-Remove-Item $installLocation -recurse -force
 Remove-Item $shortcutPath -force
+Remove-Item "$startMenuDir" -recurse -force
+Remove-Item $installLocation -exclude TFTD, UFO -recurse -force
