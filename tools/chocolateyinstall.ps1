@@ -2,13 +2,13 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$toolsDir\commonEnv.ps1"
 
-$url = 'https://openxcom.org/git_builds/openxcom_git_master_2019_06_14_2145.zip'
+$url = 'https://openxcom.org/git_builds/openxcom_git_master_2019_06_28_0441.zip'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$ENV:LocalAppData\Programs"
   url           = $url
   softwareName  = 'xcom*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
-  checksum      = '5C93BD49F89A231971298C12EC5C21335A927C161A412E6AA1E6B22C03DBCB17'
+  checksum      = 'B9A17995F45221BFC77617A8753DADA59EDBDE9FFB8909542B56A3CCE6FECCD1'
   checksumType    = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
