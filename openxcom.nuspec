@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openxcom</id>
-    <version>2019.06.28.0441</version>
+    <version>2019.07.10.0142</version>
     <packageSourceUrl>https://github.com/n3rd4i/openxcom.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>openxcom (Install)</title>
@@ -29,8 +29,9 @@ The goal of the project is to bring back the tried and true feel of the original
 * Flexibility: Port the game to any platform you like, customize it to your liking, or use it to make your own far-fetched remakes. The code is fully documented and open-source so anyone can take a crack at it.
 
 For more details check the [Wiki](https://https//ufopaedia.org/index.php?title=OpenXcom).
+
     </description>
-    <releaseNotes>https://github.com/OpenXcom/OpenXcom/blob/master/CHANGELOG.txt</releaseNotes>
+    <releaseNotes>https://openxcom.org/git-builds</releaseNotes>
     </metadata>
   <files>
     <file src="tools\**" target="tools" />
