@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openxcom</id>
-    <version>2019.07.10.0142</version>
+    <version>2019.07.28.0403</version>
     <packageSourceUrl>https://github.com/n3rd4i/openxcom.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>openxcom (Install)</title>
@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/OpenXcom/OpenXcom/</projectSourceUrl>
     <docsUrl>https://github.com/OpenXcom/OpenXcom/blob/master/README.md</docsUrl>
-    <mailingListUrl>https://github.com/OpenXcom/OpenXcom/graphs/contributors</mailingListUrl>
+    <mailingListUrl>https://openxcom.org/forum/</mailingListUrl>
     <bugTrackerUrl>https://openxcom.org/bug-tracker/</bugTrackerUrl>
     <tags>openxcom xcom</tags>
     <summary>XCOM game engine</summary>
