@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openxcom</id>
-    <version>2019.07.28.0403</version>
+    <version>2019.08.03.0017</version>
     <packageSourceUrl>https://github.com/n3rd4i/openxcom.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>openxcom (Install)</title>
     <authors>SupSuper</authors>
-    <projectUrl>https://github.com/OpenXcom/OpenXcom/</projectUrl>
+    <projectUrl>https://openxcom.org/</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/OpenXcom/OpenXcom/10f51b91/res/openxcom_block.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <licenseUrl>https://github.com/OpenXcom/OpenXcom/blob/master/LICENSE.txt</licenseUrl>
