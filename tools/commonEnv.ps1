@@ -1,4 +1,6 @@
 $GameName = 'OpenXCOM'
-$installLocation = "$ENV:LocalAppData\Programs\openxcom"
-$shortcutPath = "$ENV:UserProfile\Desktop\$GameName.lnk"
-$startMenuDir = "$ENV:AppData\Microsoft\Windows\Start Menu\Programs\$GameName"
+$GameNameLow = $GameName.toLower()
+
+$installLocation = [IO.Path]::Combine($ENV:LocalAppData, 'Programs', $GameNameLow)
+$shortcutPath = [IO.Path]::Combine($ENV:UserProfile, 'Desktop', "$GameName.lnk")
+$startMenuDir = [IO.Path]::Combine($ENV:AppData, 'Microsoft\Windows\Start Menu\Programs', "$GameName")

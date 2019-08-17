@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-. "$toolsDir\commonEnv.ps1"
+. "$(Join-Path $toolsDir commonEnv.ps1)"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
