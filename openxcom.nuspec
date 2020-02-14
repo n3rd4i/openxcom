@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openxcom</id>
-    <version>2019.10.27.1448</version>
+    <version>2020.02.10.0926</version>
     <packageSourceUrl>https://github.com/n3rd4i/openxcom.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>openxcom (Install)</title>
