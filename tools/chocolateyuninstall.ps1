@@ -26,6 +26,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
-Remove-Item $shortcutPath -force
+Remove-Item "$shortcutPath" -force -ErrorAction SilentlyContinue
 Remove-Item "$startMenuDir" -recurse -force
-Remove-Item $installLocation -exclude TFTD, UFO -recurse -force
+Remove-Item "$installLocation" -exclude TFTD, UFO -recurse -force
