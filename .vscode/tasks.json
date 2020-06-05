@@ -30,6 +30,12 @@
 			"label": "clean",
 			"type": "shell",
 			"command": "del /s /q *.nupkg",
+		},
+		{
+			"label": "package update",
+			"type": "shell",
+			"command": "./update.ps1",
+			"options": {"shell": {"executable": "powershell.exe"}}
 		}
 	]
 }
