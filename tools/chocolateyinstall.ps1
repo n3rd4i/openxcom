@@ -2,11 +2,10 @@ $ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
-$url = 'https://openxcom.org/git_builds/openxcom_git_master_2020_06_05_0810.zip'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Join-Path $ENV:LocalAppData Programs)"
-  url           = $url
+  url           = 'https://openxcom.org/git_builds/openxcom_git_master_2020_06_08_1453.zip'
   softwareName  = 'xcom*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   checksum      = 'FFB9668E5612CA2F0EAC0DE51A8EA83C9BB87EFC70BAC387B78C57BDFF1CEE33'
   checksumType    = 'sha256'
