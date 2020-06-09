@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'; # stop on all errors
+﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$(Join-Path $toolsDir commonEnv.ps1)"
 
@@ -7,7 +7,7 @@ $packageArgs = @{
   unzipLocation = "$(Join-Path $ENV:LocalAppData Programs)"
   url           = 'https://openxcom.org/git_builds/openxcom_git_master_2020_06_08_1453.zip'
   softwareName  = 'xcom*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
-  checksum      = 'FFB9668E5612CA2F0EAC0DE51A8EA83C9BB87EFC70BAC387B78C57BDFF1CEE33'
+  checksum      = 'd2edb00cc4782c44babbb6287afe033f373b79ce7cb2cec659b3a4993e87c126'
   checksumType    = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs

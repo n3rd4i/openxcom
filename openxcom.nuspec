@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>openxcom</id>
-    <version>2020.06.05.0810</version>
+    <version>2020.06.08.1453</version>
     <packageSourceUrl>https://github.com/n3rd4i/openxcom.git</packageSourceUrl>
     <owners>n3rd4i</owners>
     <title>OpenXCOM</title>
