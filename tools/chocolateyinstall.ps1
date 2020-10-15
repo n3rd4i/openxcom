@@ -5,8 +5,8 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = "$(Join-Path $ENV:LocalAppData Programs)"
-  url           = 'https://openxcom.org/git_builds/openxcom_git_master_2020_10_02_1817.zip'
-  checksum      = '3474c03e84924d47dc77b56605224480f5c8274af78cfe74555ad600e72d060b'
+  url           = 'https://openxcom.org/git_builds/openxcom_git_master_2020_10_14_1316.zip'
+  checksum      = '3f5b30576176c7565484edbaf4f59915e550a6648aec2af55761d910338b0b33'
   checksumType    = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
